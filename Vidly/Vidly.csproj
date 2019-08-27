@@ -177,9 +177,50 @@
     <Compile Include="Migrations\201908261031482_AddMembershipType.Designer.cs">
       <DependentUpon>201908261031482_AddMembershipType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201908270426520_PopulateMembershipTypes.cs" />
+    <Compile Include="Migrations\201908270426520_PopulateMembershipTypes.Designer.cs">
+      <DependentUpon>201908270426520_PopulateMembershipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908270436586_ApplyAnnotationsToCustomerName.cs" />
+    <Compile Include="Migrations\201908270436586_ApplyAnnotationsToCustomerName.Designer.cs">
+      <DependentUpon>201908270436586_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908270802515_AddNameToMembershipType.cs" />
+    <Compile Include="Migrations\201908270802515_AddNameToMembershipType.Designer.cs">
+      <DependentUpon>201908270802515_AddNameToMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908270831050_MembershipTypes.cs" />
+    <Compile Include="Migrations\201908270831050_MembershipTypes.Designer.cs">
+      <DependentUpon>201908270831050_MembershipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908270840160_removeTestColumn.cs" />
+    <Compile Include="Migrations\201908270840160_removeTestColumn.Designer.cs">
+      <DependentUpon>201908270840160_removeTestColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908270845304_SetNameOfMembershipTypes.cs" />
+    <Compile Include="Migrations\201908270845304_SetNameOfMembershipTypes.Designer.cs">
+      <DependentUpon>201908270845304_SetNameOfMembershipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908270904385_AddDobOfCustomers.cs" />
+    <Compile Include="Migrations\201908270904385_AddDobOfCustomers.Designer.cs">
+      <DependentUpon>201908270904385_AddDobOfCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908270909531_AddDateForSomeCustomers.cs" />
+    <Compile Include="Migrations\201908270909531_AddDateForSomeCustomers.Designer.cs">
+      <DependentUpon>201908270909531_AddDateForSomeCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908271005036_AddMovie.cs" />
+    <Compile Include="Migrations\201908271005036_AddMovie.Designer.cs">
+      <DependentUpon>201908271005036_AddMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908271036065_Genres.cs" />
+    <Compile Include="Migrations\201908271036065_Genres.Designer.cs">
+      <DependentUpon>201908271036065_Genres.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
@@ -258,6 +299,36 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201908261031482_AddMembershipType.resx">
       <DependentUpon>201908261031482_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908270426520_PopulateMembershipTypes.resx">
+      <DependentUpon>201908270426520_PopulateMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908270436586_ApplyAnnotationsToCustomerName.resx">
+      <DependentUpon>201908270436586_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908270802515_AddNameToMembershipType.resx">
+      <DependentUpon>201908270802515_AddNameToMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908270831050_MembershipTypes.resx">
+      <DependentUpon>201908270831050_MembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908270840160_removeTestColumn.resx">
+      <DependentUpon>201908270840160_removeTestColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908270845304_SetNameOfMembershipTypes.resx">
+      <DependentUpon>201908270845304_SetNameOfMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908270904385_AddDobOfCustomers.resx">
+      <DependentUpon>201908270904385_AddDobOfCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908270909531_AddDateForSomeCustomers.resx">
+      <DependentUpon>201908270909531_AddDateForSomeCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908271005036_AddMovie.resx">
+      <DependentUpon>201908271005036_AddMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908271036065_Genres.resx">
+      <DependentUpon>201908271036065_Genres.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

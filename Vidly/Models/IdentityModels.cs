@@ -10,6 +10,7 @@ namespace Vidly.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public System.Data.Entity.DbSet<Customer> Customers { get; set; }
+        public System.Data.Entity.DbSet<Movie> Movies { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection")
         {
