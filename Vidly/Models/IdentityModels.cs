@@ -12,6 +12,7 @@ namespace Vidly.Models
         public System.Data.Entity.DbSet<Customer> Customers { get; set; }
         public System.Data.Entity.DbSet<Movie> Movies { get; set; }
         public System.Data.Entity.DbSet<MembershipType> MembershipTypes{ get; set; }
+        public System.Data.Entity.DbSet<Genre> Genres { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection")
         {
