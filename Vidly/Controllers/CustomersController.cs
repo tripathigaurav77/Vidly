@@ -32,10 +32,21 @@ namespace Vidly.Controllers
 
 			return View("CustomerForm", viewModel);
 		}
-
+		
 		[HttpPost]
+		[ValidateAntiForgeryToken]
 		public ActionResult Save(Customer customer)
 		{
+			if (!ModelState.IsValid)
+			{
+				var viewModel = new CustomerFormViewModel
+				{
+					Customer = customer,
+					MembershipTypes = _context.MembershipTypes.ToList()
+				};
+				return View("CustomerForm", viewModel);
+			}
+
 			if (customer.Id == 0)
 				_context.Customers.Add(customer);
 			else
@@ -56,8 +67,8 @@ namespace Vidly.Controllers
 		// GET: /Customers/
 		public ViewResult Index()
 		{
-			var cust = _context.Customers.Include(c => c.MembershipType).ToList();
-			return View(cust);
+			//var cust = _context.Customers.Include(c => c.MembershipType).ToList();
+			return View();   //cust);
 		}
 
 		public ActionResult Details(int id)
@@ -84,6 +95,8 @@ namespace Vidly.Controllers
 			};
 			return View("CustomerForm", viewModel);
 		}
+
+		
 
 		//private IEnumerable<Customer> GetCustomers()
 		//{
